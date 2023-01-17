@@ -1,0 +1,72 @@
+@import "../../styles/unitConverter.scss";
+
+.container {
+    padding-bottom: pxToRem(12 - 1);
+    width: fit-content;
+    height: fit-content;
+
+    @media (min-width: 571.5px) {
+        padding-bottom: pxToRem(15);
+    }
+}
+
+.destinations-slide-button {
+    display: flex;
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', Courier, monospace;
+    font-size: pxToRem(14);
+    font-weight: 400;
+    letter-spacing: pxToRem(2.36);
+    line-height: pxToRem(16.8);
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        border-bottom-color: #FFFFFF00;
+        border-bottom-style: solid;
+        border-bottom-width: pxToRem(3);
+        padding-bottom: pxToRem(8);
+        transition-duration: 0.2s;
+        transition-property: border-bottom-color;
+        transition-timing-function: ease-in-out;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+
+        @media (min-width: 571.5px) {
+            padding-bottom: pxToRem(12);
+        }
+    }
+
+    &:hover {
+        &::before {
+            border-bottom-color: #FFFFFF80;
+        }
+    }
+
+    @media (min-width: 571.5px) {
+        font-size: pxToRem(16);
+        letter-spacing: pxToRem(2.7);
+        line-height: pxToRem(19.2);
+    }
+}
+
+.destinations-slide-button--active {
+    color: #FFFFFF;
+
+    &::before {
+        border-bottom-color: #FFFFFF;
+    }
+
+    &:hover {
+        &::before {
+            border-bottom-color: #FFFFFF;
+        }
+    }
+}

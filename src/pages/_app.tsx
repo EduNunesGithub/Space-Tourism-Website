@@ -7,6 +7,7 @@ import { GlobalStylesComponent } from "@/styles/GlobalStylesComponent/GlobalStyl
 import { theme } from "@/styles/Theme/default";
 import { pxToRem } from "@/utils/unitConverter";
 
+import "../styles/global.scss";
 import "swiper/css";
 
 export default function App({ Component, pageProps }: AppProps) {

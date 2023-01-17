@@ -6,6 +6,8 @@ import {
     URLs
 } from "@/components/GlobalBackground/GlobalBackground";
 import { TechnologyContent } from "@/components/TechnologyContent/TechnologyContent";
+import { TechnologyContent as TechnologyContentSass } from "@/components/TechnologyContent/TechnologyContentSass";
+import { TechnologySlide } from "@/components/TechnologySlide/TechnologySlideSass";
 
 import { theme } from "@/styles/Theme/default";
 
@@ -61,7 +63,11 @@ const Technology = ({
                 URLs={background}
             />
 
-            <TechnologyContent
+            {/* <TechnologyContent
+                data={data}
+            /> */}
+
+            <TechnologyContentSass
                 data={data}
             />
         </Box>
@@ -84,7 +90,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
     return ({
         props: {
             data: data.response
-        }
+        },
+        revalidate: 60 * 60 * 24
     });
 };
 

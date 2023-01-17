@@ -1,0 +1,146 @@
+@import "../../styles/unitConverter.scss";
+
+.body-text {
+    font-family: "Barlow", sans-serif;
+    font-size: pxToRem(15);
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: pxToRem(25);
+
+    @media (min-width: 571.5px) {
+        font-size: pxToRem(16);
+        line-height: pxToRem(28);
+    }
+
+    @media (min-width: 1104px) {
+        font-size: pxToRem(18);
+        line-height: pxToRem(32);
+    }
+}
+
+.heading-01 {
+    font-family: "Bellefair", sans-serif;
+    font-size: pxToRem(80);
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: pxToRem(100);
+
+    @media (min-width: 571.5px) {
+        font-size: pxToRem(150);
+        line-height: pxToRem(150);
+    }
+
+    @media (min-width: 1104px) {
+        line-height: pxToRem(172);
+    }
+}
+
+.heading-02 {
+    font-family: "Bellefair", sans-serif;
+    font-size: pxToRem(56);
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: pxToRem(64.18);
+
+    @media (min-width: 571.5px) {
+        font-size: pxToRem(80);
+        line-height: pxToRem(91.68);
+    }
+
+    @media (min-width: 1104px) {
+        font-size: pxToRem(100);
+        line-height: pxToRem(114.6);
+    }
+}
+
+.heading-03 {
+    font-family: "Bellefair", sans-serif;
+    font-size: pxToRem(24);
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: pxToRem(27.5);
+
+    @media (min-width: 571.5px) {
+        font-size: pxToRem(40);
+        line-height: pxToRem(45.84);
+    }
+
+    @media (min-width: 1104px) {
+        font-size: pxToRem(56);
+        line-height: pxToRem(64.18);
+    }
+}
+
+.heading-04 {
+    font-family: "Bellefair", sans-serif;
+    font-size: pxToRem(16);
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: pxToRem(18.34);
+
+    @media (min-width: 571.5px) {
+        font-size: pxToRem(24);
+        line-height: pxToRem(27.5);
+    }
+
+    @media (min-width: 1104px) {
+        font-size: pxToRem(32);
+        line-height: pxToRem(36.68);
+    }
+}
+
+.heading-05 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: pxToRem(16);
+    font-weight: 400;
+    letter-spacing: pxToRem(2.7);
+    line-height: pxToRem(19.2);
+
+    @media (min-width: 571.5px) {
+        font-size: pxToRem(20);
+        letter-spacing: pxToRem(3.38);
+        line-height: pxToRem(24);
+    }
+
+    @media (min-width: 1104px) {
+        font-size: pxToRem(28);
+        letter-spacing: pxToRem(4.72);
+        line-height: pxToRem(33.6);
+    }
+}
+
+.nav-text {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: pxToRem(16);
+    font-weight: 400;
+    letter-spacing: pxToRem(2.7);
+    line-height: pxToRem(19.2);
+
+    @media (min-width: 571.5px) {
+        font-size: pxToRem(14);
+        letter-spacing: pxToRem(2.36);
+        line-height: pxToRem(16.8);
+    }
+
+    @media (min-width: 1104px) {
+        font-size: pxToRem(16);
+        letter-spacing: pxToRem(2.7);
+        line-height: pxToRem(19.2);
+    }
+}
+
+.subheading-01 {
+    font-family: "Bellefair", sans-serif;
+    font-size: pxToRem(28);
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: pxToRem(32.10);
+}
+
+.subheading-02 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: pxToRem(14);
+    font-weight: 400;
+    letter-spacing: pxToRem(2.36);
+    line-height: pxToRem(16.8);
+}

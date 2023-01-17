@@ -1,0 +1,120 @@
+@import "../../styles/unitConverter.scss";
+
+.article {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1104px) {
+        padding-top: pxToRem(70);
+        max-width: pxToRem(445);
+    }
+}
+
+.article-information-container {
+    display: flex;
+    gap: pxToRem(32);
+    flex-direction: column;
+
+    @media (min-width: 571.5px) {
+        gap: 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.destinations-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: normal;
+    width: 100%;
+    min-height: 100%;
+
+    @media (min-width: 1104px) {
+        flex-direction: row;
+        align-items: normal;
+    }
+}
+
+.article__decoration {
+    background-color: #383B4B;
+    display: flex;
+    margin-top: pxToRem(32);
+    margin-bottom: pxToRem(32);
+    width: 100%;
+    height: pxToRem(1);
+
+    @media (min-width: 571.5px) {
+        margin-top: pxToRem(50);
+        margin-bottom: pxToRem(28);
+    }
+
+    @media (min-width: 1104px) {
+        margin-top: pxToRem(54);
+    }
+}
+
+.article__heading {
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: pxToRem(2);
+
+    @media (min-width: 571.5px) {
+        margin-bottom: pxToRem(8);
+    }
+
+    @media (min-width: 1104px) {
+        text-align: left;
+        margin-bottom: pxToRem(14);
+    }
+}
+
+.article__text {
+    color: #D0D6F9;
+    font-weight: 400;
+    text-align: center;
+
+    @media (min-width: 1104px) {
+        text-align: left;
+    }
+}
+
+.article-information-container__information {
+    display: flex;
+    gap: pxToRem(12);
+    flex-direction: column;
+    text-align: center;
+
+    .information__heading {
+        color: #D0D6F9;
+        font-weight: 400;
+    }
+
+    .information__text {
+        color: #FFFFFF;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}
+
+.destinations-slide__image {
+    position: relative;
+    margin-bottom: pxToRem(74);
+    width: pxToRem(170);
+    height: pxToRem(170);
+
+    @media (min-width: 571.5px) {
+        margin-bottom: pxToRem(120);
+        width: pxToRem(300);
+        height: pxToRem(300);
+    }
+
+    @media (min-width: 1104px) {
+        margin: auto;
+        margin-bottom: auto;
+        width: pxToRem(445);
+        height: pxToRem(445);
+    }
+}
