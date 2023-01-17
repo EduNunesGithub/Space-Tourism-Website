@@ -9,7 +9,6 @@ import {
 
 import { pxToRem } from "@/utils/unitConverter";
 import { Technology } from "@/pages/technology";
-import { theme } from "@/styles/Theme/default";
 
 import placeholder from "../../../public/JPG/placeholder.jpg";
 
@@ -66,7 +65,7 @@ export const TechnologySlide = ({
                     fill={true}
                     placeholder="blur"
                     quality={100}
-                    sizes={`(max-width: ${theme.breakpoints.values.lg}px) 100vw, (min-width: ${theme.breakpoints.values.lg}px) 0vw`}
+                    sizes={`(max-width: ${1104}px) 100vw, (min-width: ${1104}px) 0vw`}
                     src={technology?.images?.landscape}
                     style={{
                         objectFit: "cover"
@@ -93,7 +92,7 @@ export const TechnologySlide = ({
                     fill={true}
                     placeholder="blur"
                     quality={100}
-                    sizes={`(max-width: ${theme.breakpoints.values.lg - 1}px) 0vw, (min-width: ${0}px) 100vw`}
+                    sizes={`(max-width: ${1104 - 1}px) 0vw, (min-width: ${0}px) 100vw`}
                     src={technology?.images?.portrait}
                     style={{
                         objectFit: "cover"

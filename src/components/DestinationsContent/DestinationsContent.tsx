@@ -20,8 +20,6 @@ type DestinationsContentProps = {
     data: Destination[];
 };
 
-const array = ["home", "destiny", "teste", "home", "destiny", "teste"];
-
 export const DestinationsContent = ({
     data
 }: DestinationsContentProps) => {

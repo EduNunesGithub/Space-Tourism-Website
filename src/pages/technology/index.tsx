@@ -9,8 +9,6 @@ import { TechnologyContent } from "@/components/TechnologyContent/TechnologyCont
 import { TechnologyContent as TechnologyContentSass } from "@/components/TechnologyContent/TechnologyContentSass";
 import { TechnologySlide } from "@/components/TechnologySlide/TechnologySlideSass";
 
-import { theme } from "@/styles/Theme/default";
-
 import backgroundTechnologyDesktop from "../../../public/JPG/backgrounds/background-technology-desktop.jpg";
 import backgroundTechnologyMobile from "../../../public/JPG/backgrounds/background-technology-mobile.jpg";
 import backgroundTechnologyTablet from "../../../public/JPG/backgrounds/background-technology-tablet.jpg";
@@ -32,20 +30,7 @@ type TechnologyProps = {
     data: Technology[];
 };
 
-const background: URLs = [
-    {
-        minWidth: theme.breakpoints.values.xs,
-        URL: backgroundTechnologyMobile
-    },
-    {
-        minWidth: theme.breakpoints.values.md,
-        URL: backgroundTechnologyTablet
-    },
-    {
-        minWidth: theme.breakpoints.values.lg,
-        URL: backgroundTechnologyDesktop
-    }
-];
+const background: URLs = [];
 
 const Technology = ({
     data = []

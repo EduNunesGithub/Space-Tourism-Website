@@ -3,23 +3,21 @@ import {
     URLs
 } from "@/components/GlobalBackground/GlobalBackground";
 
-import { theme } from "@/styles/Theme/default";
-
 import backgroundHomeDesktop from "../../public/JPG/backgrounds/background-home-desktop.jpg";
 import backgroundHomeMobile from "../../public/JPG/backgrounds/background-home-mobile.jpg";
 import backgroundHomeTablet from "../../public/JPG/backgrounds/background-home-tablet.jpg";
 
 const background: URLs = [
     {
-        minWidth: theme.breakpoints.values.xs,
+        minWidth: 0,
         URL: backgroundHomeMobile
     },
     {
-        minWidth: theme.breakpoints.values.md,
+        minWidth: 571.5,
         URL: backgroundHomeTablet
     },
     {
-        minWidth: theme.breakpoints.values.lg,
+        minWidth: 1104,
         URL: backgroundHomeDesktop
     }
 ];

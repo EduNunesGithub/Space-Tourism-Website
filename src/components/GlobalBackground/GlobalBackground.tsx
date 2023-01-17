@@ -1,4 +1,3 @@
-import Box from "@mui/material/Box";
 import Image, { StaticImageData } from "next/image";
 import {
     Dispatch,
@@ -8,7 +7,9 @@ import {
     useState
 } from "react";
 
-import placeholder from "../../../public/JPG/placeholder.jpg";
+import styles from "./GlobalBackgroundStyles.module.scss";
+
+import placeholder from "../../../public/WEBP/placeholder.webp";
 
 type CreateMediaQueries = {
     normalized: NormalizedURL[];
@@ -69,27 +70,11 @@ export const GlobalBackground = ({
     }, [normalized]);
 
     return (
-        <Box
-            sx={{
-                backgroundColor: colorPlaceholder ?? "#FFFFFF",
-                position: "fixed",
-                top: 0,
-                left: 0,
-                zIndex: -1000000,
-                width: "100vw",
-                height: "100vh"
-            }}
-        >
-            <Box
-                sx={{
-                    position: "relative",
-                    width: "100%",
-                    height: "100%"
-                }}
-            >
+        <div className={styles['global-background']}>
+            <div className={styles['image-container']}>
                 <Image
                     alt=""
-                    blurDataURL={placeholder.blurDataURL}
+                    blurDataURL={placeholder.src}
                     fill={true}
                     quality={100}
                     src={URL === undefined ? placeholder : URL}
@@ -98,8 +83,8 @@ export const GlobalBackground = ({
                         objectFit: "cover"
                     }}
                 />
-            </Box>
-        </Box>
+            </div>
+        </div>
     );
 };
 
