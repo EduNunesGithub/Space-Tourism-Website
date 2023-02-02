@@ -1,0 +1,86 @@
+@import "../../styles/unitConverter.scss";
+
+.article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    max-width: pxToRem(327);
+
+    @media (min-width: 571.5px) {
+        max-width: pxToRem(450);
+    }
+
+    @media (min-width: 1104px) {
+        text-align: left;
+        margin-left: 0;
+    }
+}
+
+.article__heading {
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-top: pxToRem(16);
+    margin-bottom: pxToRem(16);
+
+    @media (min-width: 571.5px) {
+        margin-top: pxToRem(24);
+        margin-bottom: pxToRem(24);
+    }
+}
+
+.article__subheading {
+    color: #D0D6F9;
+    font-weight: 400;
+}
+
+.article__text {
+    color: #D0D6F9;
+    font-weight: 400;
+    max-width: pxToRem(445);
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding-top: pxToRem(24);
+    padding-right: pxToRem(24);
+    padding-bottom: pxToRem(48);
+    padding-left: pxToRem(24);
+    width: 100%;
+
+    @media (min-width: 571.5px) {
+        padding-top: pxToRem(106);
+        padding-right: pxToRem(40);
+        padding-bottom: pxToRem(90);
+        padding-left: pxToRem(40);
+    }
+
+    @media (min-width: 1104px) {
+        padding-top: pxToRem(210);
+        padding-right: pxToRem(55);
+        padding-bottom: pxToRem(130);
+        padding-left: pxToRem(55);
+    }
+}
+
+.section {
+    display: flex;
+    gap: pxToRem(80);
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 571.5px) {
+        gap: pxToRem(156);
+    }
+
+    @media (min-width: 1104px) {
+        flex-direction: row;
+        align-items: flex-end;
+        margin: auto;
+        width: 100%;
+        max-width: pxToRem(1110);
+    }
+}

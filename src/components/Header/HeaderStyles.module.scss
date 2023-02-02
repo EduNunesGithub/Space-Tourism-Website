@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    width: 100%;
+}
+
+.header__desktop {
+    display: none;
+
+    @media (min-width: 571.5px) {
+        display: flex;
+    }
+}
+
+.header__mobile {
+    display: flex;
+
+    @media (min-width: 571.5px) {
+        display: none;
+    }
+}

@@ -1,0 +1,108 @@
+{
+	"destinations": [
+		{
+			"description": "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
+			"distance": "384,400 km",
+			"images": {
+				"png": "./assets/destination/image-moon.png",
+				"webp": "https://i.ibb.co/LxFRKV3/image-moon.webp"
+			},
+			"name": "Moon",
+			"travel": "3 days"
+		},
+		{
+			"description": "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
+			"distance": "225 mil. km",
+			"images": {
+				"png": "./assets/destination/image-mars.png",
+				"webp": "https://i.ibb.co/Hnmp39Z/image-mars.webp"
+			},
+			"name": "Mars",
+			"travel": "9 months"
+		},
+		{
+			"description": "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
+			"distance": "628 mil. km",
+			"images": {
+				"png": "./assets/destination/image-europa.png",
+				"webp": "https://i.ibb.co/FVfpDQp/image-europa.webp"
+			},
+			"name": "Europa",
+			"travel": "3 years"
+		},
+		{
+			"description": "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
+			"distance": "1.6 bil. km",
+			"images": {
+				"png": "./assets/destination/image-titan.png",
+				"webp": "https://i.ibb.co/svRGJpx/image-titan.webp"
+			},
+			"name": "Titan",
+			"travel": "7 years"
+		}
+	],
+	"crew": [
+		{
+			"bio": "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
+			"images": {
+				"png": "./assets/crew/image-douglas-hurley.png",
+				"webp": "https://i.ibb.co/YTHj8VK/image-douglas-hurley.webp"
+			},
+			"name": "Douglas Hurley",
+			"role": "Commander"
+		},
+		{
+			"bio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
+			"images": {
+				"png": "./assets/crew/image-mark-shuttleworth.png",
+				"webp": "https://i.ibb.co/qmhprmc/image-mark-shuttleworth.webp"
+			},
+			"name": "Mark Shuttleworth",
+			"role": "Mission Specialist"
+		},
+		{
+			"bio": "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18. He was a crew member of Expedition 64, and served as a station systems flight engineer.",
+			"images": {
+				"png": "./assets/crew/image-victor-glover.png",
+				"webp": "https://i.ibb.co/nB1hvRT/image-victor-glover.webp"
+			},
+			"name": "Victor Glover",
+			"role": "Pilot"
+		},
+		{
+			"bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.",
+			"images": {
+				"png": "./assets/crew/image-anousheh-ansari.png",
+				"webp": "https://i.ibb.co/CwsvY4N/image-anousheh-ansari.webp"
+			},
+			"name": "Anousheh Ansari",
+			"role": "Flight Engineer"
+		}
+	],
+	"technology": [
+		{
+			"description": "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
+			"images": {
+				"portrait": "https://i.ibb.co/WH2f2TV/image-launch-vehicle-portrait.jpg",
+				"landscape": "https://i.ibb.co/VjV74B8/image-launch-vehicle-landscape.jpg"
+			},
+			"name": "Launch vehicle"
+		},
+		{
+			"description": "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
+			"images": {
+				"portrait": "https://i.ibb.co/rdqD1Vb/image-spaceport-portrait.jpg",
+				"landscape": "https://i.ibb.co/Yp3RbQz/image-spaceport-landscape.jpg"
+			},
+			"name": "Spaceport"
+		},
+		{
+			"description": "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
+			"images": {
+				"portrait": "https://i.ibb.co/KsJdQ1n/image-space-capsule-portrait.jpg",
+				"landscape": "https://i.ibb.co/K6gB9pz/image-space-capsule-landscape.jpg"
+			},
+			"name": "Space capsule"
+		}
+	]
+}

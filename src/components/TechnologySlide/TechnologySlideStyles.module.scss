@@ -1,0 +1,101 @@
+@import "../../styles/unitConverter.scss";
+
+.article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: pxToRem(24);
+    padding-left: pxToRem(24);
+    width: 100%;
+    max-width: pxToRem(375);
+
+    @media (min-width: 571.5px) {
+        padding-right: pxToRem(40);
+        padding-left: pxToRem(40);
+        max-width: pxToRem(450 + 40 + 40);
+    }
+
+    @media (min-width: 1104px) {
+        flex-grow: 1;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 0;
+        max-width: none;
+    }
+}
+
+.technology-slide {
+    display: flex;
+    gap: pxToRem(100);
+    flex-direction: column;
+    height: 100%;
+
+    @media (min-width: 571.5px) {
+        gap: pxToRem(160);
+    }
+
+    @media (min-width: 1104px) {
+        gap: pxToRem(55);
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+}
+
+.article__heading {
+    color: #FFFFFF;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: pxToRem(8);
+    margin-bottom: pxToRem(16);
+
+    @media (min-width: 571.5px) {
+        margin-top: pxToRem(16);
+    }
+
+    @media (min-width: 1104px) {
+        margin-top: pxToRem(11);
+        margin-bottom: pxToRem(17);
+    }
+}
+
+.article__subheading {
+    color: #D0D6F9;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: pxToRem(14);
+    font-weight: 400;
+    letter-spacing: pxToRem(2.36);
+    line-height: pxToRem(16.8);
+
+    @media (min-width: 571.5px) {
+        font-size: pxToRem(16);
+        letter-spacing: pxToRem(2.7);
+        line-height: pxToRem(19.2);
+    }
+}
+
+.article__text {
+    color: #D0D6F9;
+    font-weight: 400;
+
+    @media (min-width: 1104px) {
+        max-width: pxToRem(445);
+    }
+}
+
+.technology-slide__image {
+    object-fit: cover;
+    flex-shrink: 0;
+    width: 100%;
+    height: pxToRem(170);
+
+    @media (min-width: 571.5px) {
+        height: pxToRem(310);
+    }
+
+    @media (min-width: 1104px) {
+        width: pxToRem(515);
+        height: pxToRem(527);
+    }
+}

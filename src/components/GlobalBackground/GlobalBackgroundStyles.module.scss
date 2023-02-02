@@ -1,0 +1,44 @@
+@import "../../styles/unitConverter.scss";
+
+.global-background {
+    background-color: #FFFFFF;
+    background-image: url("../../assets/WEBP/placeholder.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1000000;
+    width: 100vw;
+    height: 100vh;
+
+    &::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -999999;
+        backdrop-filter: blur(pxToRem(100));
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.global-background__image {
+    opacity: 1;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999998;
+    transition-duration: 0.4s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+    width: 100vw;
+    height: 100vh;
+}
+
+.global-background__image--hidden {
+    opacity: 0;
+}

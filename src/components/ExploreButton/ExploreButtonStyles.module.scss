@@ -1,0 +1,57 @@
+@use "sass:math";
+@import "../../styles/unitConverter.scss";
+
+.explore-button {
+    background-color: #FFFFFF;
+    color: #0B0D17;
+    font-family: "Bellefair", sans-serif;
+    font-size: pxToRem(20);
+    letter-spacing: pxToRem(1.25);
+    line-height: pxToRem(22.92);
+    text-align: center;
+    border: none;
+    box-shadow: 0px 0px 0px pxToRem(math.div(87.5, 275) * 0) #FFFFFF1A;
+    transition-duration: 0.2s;
+    transition-property: box-shadow;
+    transition-timing-function: ease-in-out;
+    border-radius: 50%;
+    width: pxToRem(150);
+    height: pxToRem(150);
+
+    &:focus {
+        box-shadow: 0px 0px 0px pxToRem(math.div(87.5, 275) * 150) #FFFFFF1A;
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 0px pxToRem(math.div(87.5, 275) * 150) #FFFFFF1A;
+    }
+
+    @media (min-width: 571.5px) {
+        font-size: pxToRem(32);
+        letter-spacing: pxToRem(2);
+        line-height: pxToRem(36.68);
+        width: pxToRem(250);
+        height: pxToRem(250);
+
+        &:focus {
+            box-shadow: 0px 0px 0px pxToRem(math.div(87.5, 275) * 250) #FFFFFF1A;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 0px pxToRem(math.div(87.5, 275) * 250) #FFFFFF1A;
+        }
+    }
+
+    @media (min-width: 1104px) {
+        width: pxToRem(275);
+        height: pxToRem(275);
+
+        &:focus {
+            box-shadow: 0px 0px 0px pxToRem(math.div(87.5, 275) * 275) #FFFFFF1A;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 0px pxToRem(math.div(87.5, 275) * 275) #FFFFFF1A;
+        }
+    }
+}

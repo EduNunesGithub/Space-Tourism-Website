@@ -1,0 +1,40 @@
+@import "../../styles/unitConverter.scss";
+
+.image-container {
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: -100000;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(pxToRem(100));
+        z-index: -99999;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.image-container--no-blur {
+    &::before {
+        display: none;
+    }
+}
+
+.image-container__image {
+    opacity: 1;
+    z-index: -99998;
+    transition-duration: 0.4s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+}
+
+.image-container__image--hidden {
+    opacity: 0;
+}

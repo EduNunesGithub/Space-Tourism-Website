@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+    scrollbar-width: auto;
+    scrollbar-color: #D0D6F9 #0B0D17;
+    min-width: 0;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #0B0D17;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #D0D6F9;
+        border-radius: 100px;
+        border: 0px solid #FFFFFF;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+html {
+    @media (max-width: 375px) {
+        font-size: 4.2666vw;
+    }
+}

@@ -1,0 +1,10 @@
+@import "./unitConverter.scss";
+
+.app {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100vw;
+    max-width: pxToRem(1440);
+    min-height: 100vh;
+}

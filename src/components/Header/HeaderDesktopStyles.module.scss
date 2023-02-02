@@ -1,0 +1,64 @@
+@import "../../styles/unitConverter.scss";
+
+.header-desktop {
+    align-items: center;
+    padding-left: pxToRem(40);
+    height: pxToRem(96);
+
+    @media (min-width: 1104px) {
+        padding-left: pxToRem(55);
+        height: pxToRem(176);
+    }
+}
+
+.header-desktop__decoration {
+    position: relative;
+    display: none;
+    flex-grow: 1;
+    align-items: center;
+    height: 100%;
+
+    &::before {
+        content: "";
+        background-color: #FFFFFF40;
+        position: absolute;
+        right: pxToRem(-30);
+        z-index: 10;
+        width: calc(100% - pxToRem(34));
+        height: pxToRem(1);
+    }
+
+    @media (min-width: 1104px) {
+        display: flex;
+    }
+}
+
+.header-desktop__logo {
+    position: relative;
+    object-fit: cover;
+    width: pxToRem(48);
+    height: pxToRem(48);
+}
+
+.nav {
+    background-color: #FFFFFF0A;
+    display: flex;
+    justify-content: space-evenly;
+    backdrop-filter: blur(pxToRem(40));
+    align-items: center;
+    margin-left: auto;
+    width: 100%;
+    max-width: pxToRem(450);
+    height: 100%;
+
+    @media (min-width: 1104px) {
+        gap: pxToRem(48);
+        justify-content: center;
+        max-width: pxToRem(830);
+        height: pxToRem(96);
+    }
+}
+
+.nav__link {
+    height: 100%;
+}
